@@ -1,2 +1,4 @@
 # trainkit
-ui library w/ nanocomponent
+
+interactive ui components kit for making webapps in choo check it out
+
