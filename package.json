@@ -1,0 +1,30 @@
+{
+  "name": "trainkit",
+  "version": "0.1.0",
+  "description": "ui component library w/ nanocomponent",
+  "main": "index.js",
+  "scripts": {
+    "start": "budo example --live --pushstate",
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kareniel/trainkit.git"
+  },
+  "keywords": [
+    "ui",
+    "kit"
+  ],
+  "author": "kareniel",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/kareniel/trainkit/issues"
+  },
+  "homepage": "https://github.com/kareniel/trainkit#readme",
+  "devDependencies": {
+    "choo": "^6.8.0"
+  },
+  "dependencies": {
+    "nanocomponent": "^6.5.1"
+  }
+}
