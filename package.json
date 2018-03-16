@@ -1,11 +1,11 @@
 {
   "name": "trainkit",
   "version": "0.1.0",
-  "description": "ui component library w/ nanocomponent",
+  "description": "wip - ui component library w/ nanocomponent",
   "main": "index.js",
   "private": true,
   "scripts": {
-    "start": "budo example --live --pushstate",
+    "start": "budo src --live --pushstate",
     "build": "bankai build",
     "test": "node test"
   },

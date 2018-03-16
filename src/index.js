@@ -3,6 +3,8 @@ var html = require('choo/html')
 var RouterView = require('../lib/router-view')
 var app = choo()
 var routerView = RouterView()
+var Waveform = require('sound-waveform')
+var waveform = new Waveform()
 
 require('./design')
 
@@ -24,6 +26,7 @@ function home (state, emit) {
   return html`
     <div class="page">
       <h1 class="pinker">home</h1>
+      ${waveform.render()}
     </div>`
 }
 
@@ -40,6 +43,10 @@ function wrapper (view) {
     var active = 'bb b--white bw1'
     var isActive = route => route === state.route ? active : ''
 
+    // navbar links
+    // <li class=${navItem}><a class="pv0 white link ${isActive('/')}" href="/">home</a></li>
+    // <li class=${navItem}><a class="pv0 white link ${isActive('docs')}" href="/docs">docs</a></li>
+
     return html`
       <body class="bg-pink sans-serif">
 
@@ -48,8 +55,6 @@ function wrapper (view) {
         <nav class="flex h3 w-100 bg-pinker white  items-center ph2">
           <strong>trainkit</strong>
           <ul class="flex list">
-            <li class=${navItem}><a class="pv0 white link ${isActive('/')}" href="/">home</a></li>
-            <li class=${navItem}><a class="pv0 white link ${isActive('docs')}" href="/docs">docs</a></li>
           </ul>
         </nav>
 
@@ -64,3 +69,4 @@ function wrapper (view) {
       </body>`
   }
 }
+
