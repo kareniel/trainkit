@@ -1,0 +1,33 @@
+html,body {
+  height: 100%;
+}
+
+.page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate3d(0, 0, 0);
+}
+
+.page.enter {
+  /*opacity: 0;*/
+  transform: translate3d(-200px, 0, 0);
+
+}
+
+.page.enter.enter-active {
+  /*opacity: 1;*/
+  transform: translate3d(0, 0, 0);
+  transition: all 1000 ease-in-out;
+}
+
+.page.leave {
+  /*opacity: 1;*/
+  transform: translate3d(0, 0, 0);
+}
+
+.page.leave.leave-active {
+  /*opacity: 0;*/
+  transform: translate3d(-200px, 0, 0);
+  transition: all 1000 ease-in-out;
+}

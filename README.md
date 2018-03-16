@@ -1,17 +1,17 @@
 # trainkit
 
-interactive ui components kit for making webapps in choo check it out
+wip interactive ui components kit for making webapps in choo
 
-### what?
 
-this module bundles* a bunch of other modules:
+https://github.com/choojs/nanostate
+state machines
 
-- `traikit-position`
-- `traikit-notifications`
-- `traikit-dropdown`
-- `traikit-popover`
-- `traikit-tooltip`
-- `traikit-modal`
-- `traikit-tree-view`
+https://github.com/choojs/nanocomponent
+components
 
-*will bundle*\*
+https://github.com/yoshuawuyts/choo/component
+components inside choo
+
+https://github.com/yoshuawuyts/nanoanimation
+JS animations
+
